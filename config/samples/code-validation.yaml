@@ -1,0 +1,6 @@
+apiVersion: my.domain/v1
+kind: CodeValidation
+metadata:
+  name: in-operator-check
+spec:
+  foo: invalid

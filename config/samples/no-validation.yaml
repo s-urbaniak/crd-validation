@@ -1,0 +1,31 @@
+apiVersion: my.domain/v1
+kind: NoValidation
+metadata:
+  name: no-validation-check-foo
+spec:
+  foo: fooValue
+---
+apiVersion: my.domain/v1
+kind: NoValidation
+metadata:
+  name: no-validation-check-bar
+spec:
+  bar: barValue
+---
+apiVersion: my.domain/v1
+kind: NoValidation
+metadata:
+  name: no-validation-check-json
+spec:
+  lets:
+    go:
+      crazy:
+        with:
+          this: value
+---
+apiVersion: my.domain/v1
+kind: NoValidation
+metadata:
+  name: no-validation-check-gibberish
+spec: |
+  godzilla-movie: abc
